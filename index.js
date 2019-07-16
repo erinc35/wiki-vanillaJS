@@ -9,3 +9,13 @@ function handleSubmit(event) {
     document.querySelector('.searchForm').reset();
 
 }
+
+function emptyEntry() {
+    const searchResults = document.querySelector('.searchResults');
+    searchResults.innerHTML = "";
+    searchResults.insertAdjacentHTML('beforeend',
+        `<div class='empty-field'>
+            <h4 class="empty-field-message">Input field can not be empty.</h4>
+        </div>`
+    );
+}
