@@ -35,3 +35,25 @@ function fetchResults(searchQuery) {
         })
         .catch(() => console.log('An error occurred'));
 }
+
+function displayResults(results, searchQuery) {
+    const searchResults = document.querySelector('.searchResults');
+    searchResults.innerHTML = `<h2 class='results-header'>Results with '${searchQuery}':</h2>
+        <button class='sort-button'>sort by title</button>`;
+    document.querySelector('.sort-button').addEventListener('click', () => sortByTitle(results, searchQuery));
+
+    results.forEach(result => {
+        const url = encodeURI(`https://en.wikipedia.org/wiki/${result.title}`);
+
+        searchResults.insertAdjacentHTML('beforeend',
+            `<div class="resultItem">
+        <h3 class="resultItem-title">
+          <a href="${url}" target="_blank" rel="noopener">${result.title}</a>
+        </h3>
+        <span class="resultItem-snippet">${result.snippet}</span><br>
+        <a href="${url}" class="resultItem-link" target="_blank" rel="noopener">${url}</a>
+      </div>`
+        );
+    });
+
+}
