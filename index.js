@@ -57,3 +57,26 @@ function displayResults(results, searchQuery) {
     });
 
 }
+
+function invalidEntryResult(searchInfo, searchQuery) {
+    const searchResults = document.querySelector('.searchResults');
+    const suggestionQuery = searchInfo.suggestion || "";
+    let suggestion = "";
+    if (suggestionQuery !== "") {
+        const url = encodeURI(`https://en.wikipedia.org/wiki/${suggestionQuery}`);
+        suggestion = `Did you mean <span class="fetch-span">'${suggestionQuery}'</span>?`
+    } else {
+        suggestion = ""
+    }
+
+    searchResults.innerHTML = '';
+    searchResults.insertAdjacentHTML('beforeend',
+        `<div class="resultItem">
+            <h3 class="resultItem-title">No result found with '${searchQuery}'.</h3>
+            <p> 
+            ${suggestion}
+            </p>
+        </div>`
+    );
+    document.querySelector('.fetch-span').addEventListener('click', () => fetchResults(suggestionQuery));
+}
