@@ -60,8 +60,8 @@ function displayResults(results, searchQuery) {
 
 function invalidEntryResult(searchInfo, searchQuery) {
     const searchResults = document.querySelector('.searchResults');
-    // const suggestionQuery = searchInfo.suggestion || "";
-    // let suggestion = "";
+    const suggestionQuery = searchInfo.suggestion || "";
+    let suggestion = "";
     if (suggestionQuery !== "") {
         const url = encodeURI(`https://en.wikipedia.org/wiki/${suggestionQuery}`);
         suggestion = `Did you mean <span class="fetch-span">'${suggestionQuery}'</span>?`
