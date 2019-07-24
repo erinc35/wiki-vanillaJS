@@ -3,3 +3,8 @@
     justify-content: center;
     margin-top: 3%;
 }
+
+.main-header h1 {
+    margin: 0 15px;
+    padding-top: 1%
+}
