@@ -17,3 +17,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.searchForm {
+  margin-left: 30px;
+  display: flex;
+  background-color: #292929;
+  border: 1px solid #242424;
+  border-radius: 4px;
+}
