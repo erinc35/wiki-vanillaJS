@@ -25,3 +25,12 @@
   border: 1px solid #242424;
   border-radius: 4px;
 }
+
+.searchForm-input {
+  background-color: #292929;
+  border: none;
+  height: 44px;
+  width: 550px;
+  padding: 5px 10px;
+  color: white;
+}
