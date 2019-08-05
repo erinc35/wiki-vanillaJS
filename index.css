@@ -45,3 +45,7 @@
   border: none;
   background-color: #292929;
 }
+
+.icon:hover {
+  background-color: #1f1f1f;
+}
