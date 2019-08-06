@@ -49,3 +49,8 @@
 .icon:hover {
   background-color: #1f1f1f;
 }
+
+.icon img {
+  width: 22px;
+  height: 22px;
+}
