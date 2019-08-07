@@ -54,3 +54,10 @@
   width: 22px;
   height: 22px;
 }
+
+.results-header{
+  text-align: center;
+  margin-bottom: 2%;
+  opacity: 0;
+  animation: resultAnimation 0.8s forwards ease-in-out;
+}
