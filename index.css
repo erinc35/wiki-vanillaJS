@@ -61,3 +61,10 @@
   opacity: 0;
   animation: resultAnimation 0.8s forwards ease-in-out;
 }
+
+.searchResults {
+  padding: 20px 0 50px;
+  margin: 0 auto;
+  width: 750px;
+  text-align: left;
+}
