@@ -68,3 +68,13 @@
   width: 750px;
   text-align: left;
 }
+
+.resultItem {
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: resultAnimation 0.8s forwards ease-in-out;
+  color: #292929;
+  border-radius: 2px;
+  padding: 10px;
+  width: 100%;
+}
