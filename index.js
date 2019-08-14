@@ -47,12 +47,12 @@ function displayResults(results, searchQuery) {
 
         searchResults.insertAdjacentHTML('beforeend',
             `<div class="resultItem">
-        <h3 class="resultItem-title">
-          <a href="${url}" target="_blank" rel="noopener">${result.title}</a>
-        </h3>
-        <span class="resultItem-snippet">${result.snippet}</span><br>
-        <a href="${url}" class="resultItem-link" target="_blank" rel="noopener">${url}</a>
-      </div>`
+                <h3 class="resultItem-title">
+                    <a href="${url}" target="_blank" rel="noopener">${result.title}</a>
+                </h3>
+                <span class="resultItem-snippet">${result.snippet}</span><br>
+                <a href="${url}" class="resultItem-link" target="_blank" rel="noopener">${url}</a>
+            </div>`
         );
     });
 
@@ -80,3 +80,7 @@ function invalidEntryResult(searchInfo, searchQuery) {
     );
     document.querySelector('.fetch-span').addEventListener('click', () => fetchResults(suggestionQuery));
 }
+
+const form = document.querySelector('.searchForm');
+form.addEventListener('submit', handleSubmit);
+

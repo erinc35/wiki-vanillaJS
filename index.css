@@ -82,3 +82,7 @@
 .resultItem:hover {
   background-color: lightcyan;
 }
+
+.resultItem-title {
+  margin-bottom: 4px;
+}
