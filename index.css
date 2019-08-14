@@ -78,3 +78,7 @@
   padding: 10px;
   width: 100%;
 }
+
+.resultItem:hover {
+  background-color: lightcyan;
+}
