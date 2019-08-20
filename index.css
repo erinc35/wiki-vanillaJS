@@ -86,3 +86,8 @@
 .resultItem-title {
   margin-bottom: 4px;
 }
+
+resultItem-title a {
+  color: #292929;
+  text-decoration: none;
+}
