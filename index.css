@@ -95,3 +95,9 @@ resultItem-title a {
 .resultItem-title a:hover {
   text-decoration: underline;
 }
+
+.resultItem-snippet, .resultItem-link {
+  color: #292929;
+  font-size: 13px;
+  word-wrap: break-word
+}
