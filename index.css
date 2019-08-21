@@ -91,3 +91,7 @@ resultItem-title a {
   color: #292929;
   text-decoration: none;
 }
+
+.resultItem-title a:hover {
+  text-decoration: underline;
+}
