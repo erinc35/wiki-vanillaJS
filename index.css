@@ -137,3 +137,10 @@ resultItem-title a {
     margin-right: auto;
   }
 }
+
+.sort-button {
+  margin-bottom: 2%;
+  border-radius: 5%;
+  opacity: 0;
+  animation: resultAnimation 0.8s forwards ease-in-out;
+}
