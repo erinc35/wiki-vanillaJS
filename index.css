@@ -144,3 +144,8 @@ resultItem-title a {
   opacity: 0;
   animation: resultAnimation 0.8s forwards ease-in-out;
 }
+
+.fetch-span {
+  cursor: pointer;
+  text-decoration: underline;
+}
