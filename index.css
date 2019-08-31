@@ -149,3 +149,12 @@ resultItem-title a {
   cursor: pointer;
   text-decoration: underline;
 }
+
+.empty-field{
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  margin-bottom: 20px;
+  animation: resultAnimation 0.8s forwards ease-in-out;
+  text-align: center;
+}
