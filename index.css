@@ -158,3 +158,8 @@ resultItem-title a {
   animation: resultAnimation 0.8s forwards ease-in-out;
   text-align: center;
 }
+
+.empty-field-message{
+  margin-bottom: 4px;
+  color: red;
+}
